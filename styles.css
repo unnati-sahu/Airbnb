@@ -619,8 +619,6 @@ body {
 }
 
 
-
-
 @media (max-width: 480px) {
     .listings {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cards take full width */
