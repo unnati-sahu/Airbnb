@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb+</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img class="logoimg" src="https://cdn3d.iconscout.com/3d/premium/thumb/airbnb-3d-icon-download-in-png-blend-fbx-gltf-file-formats--behance-logo-vacation-social-media-logos-pack-network-communication-icons-9264663.png?f=webp" alt="logo"> 
+            <span>airbnb+</span>
+        </div>
+        
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="https://www.google.com/maps" target="_blank">Explore</a>
+            <a href="experience.html">Experiences</a>
+            <div class="profile">
+                <div class="dropdown">
+                    <img class="profile-icon" src="https://static-00.iconduck.com/assets.00/profile-circle-icon-512x512-zxne30hp.png" alt="Profile Icon"> <!-- Profile icon -->
+                    <div class="dropdown-content">
+                        <a href="#">Sign In</a>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+   <!-- Hero Section -->
+   <section class="hero">
+    <video autoplay loop muted plays-inline class="hero-video">
+        <source src="images/video1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+        <h1>Discover Your Perfect Stay</h1>
+        <p>Unforgettable homes, unique experiences, and stunning locations.</p>
+        <div class="search-bar">
+            <div class="search-item">
+                <label class="location" for="location">Location</label>
+                <input type="text" id="location" placeholder="Destination?">
+            </div>
+            <div class="search-item">
+                <label for="checkin">Check-in</label>
+                <input type="date" id="checkin">
+            </div>
+            <div class="search-item">
+                <label for="checkout">Check-out</label>
+                <input type="date" id="checkout">
+            </div>
+            <div class="search-item">
+                <label for="guests">Guests</label>
+                <select id="guests">
+                    <option value="1">1 </option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="4+">4+ </option>
+                </select>
+            </div>
+            <button class="search-btn">
+                <i class="fa fa-search"></i> <!-- Search icon inside the button -->
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Listings Section -->
+    <section class="listings">
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel1" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI4NjU5NTg0MTAwMTQxMzI4MQ%3D%3D/original/6b21381c-9f44-45c1-be46-4e37968595a7.jpeg?im_w=720&im_format=avif" alt="Cozy Cottage - Image 1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1286595841001413281/original/a44c0c51-c1e6-4769-9c65-0619f6882119.jpeg?im_w=720&im_format=avif" alt="Cozy Cottage - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI4NjU5NTg0MTAwMTQxMzI4MQ%3D%3D/original/e9ceb859-b931-49c4-8f44-48368e861129.jpeg?im_w=720&im_format=avif" alt="Cozy Cottage - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel1" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel1" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h3>Cozy Cottage, Mandrem, India</h3>
+            <p>₹5,388/night</p>
+            <span>★ 4.8</span>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+        
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel2" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-20471666/original/e71a93f9-0e23-4f8e-a7c7-3d2d78803830.jpeg?im_w=1200&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-20471666/original/03801e81-29ce-4f0e-9fff-bd564845cb80.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-20471666/original/5d842606-21e7-49e6-851a-af8e202aa55d.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel2" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel2" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h3>Breckenridge, Colorado, US</h3>
+            <p>₹1,24,467/night</p>
+            <span>★ 4.9</span>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel11" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/ml/photo_enhancement/pictures/miso/Hosting-49372736/original/f707c814-69d7-4df0-af2f-d0c95a3c8a88.jpeg?im_w=1200&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-49372736/original/c9e3ebed-ea64-4991-8f5d-9a9a80d6f0c1.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/ml/photo_enhancement/pictures/miso/Hosting-49372736/original/387d4530-d2ab-425e-998f-7b834eb4b3a7.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel11" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel11" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+                <h3>Amazing Stay, Vothonas, Greece</h3>
+                <p>₹20,800/night</p>
+                <span>★ 4.7</span>
+                <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel12" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/f405147e-dc8d-4c53-a127-50e17ef729c3.jpg?im_w=1200&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/9a440b4a-3729-4a72-9404-d515ed81fa19.jpg?im_w=720&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-27627590/original/124a0159-2ba0-4394-bba8-b06dda36641e.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel12" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel12" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+                <h3>Treehouse in Hardwick, Vermont, US</h3>
+                <p>₹21,200/night</p>
+                <span>★ 4.4</span>
+                <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel13" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/bf55ab71-e684-4c7f-b392-16e85f4a07d0.jpg?im_w=720&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/3c2fb0c6-8a9b-42e4-a246-bc101f27fbab.jpg?im_w=720&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/5b7e5916-837e-4bfb-96d0-08458d71d068.jpg?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel13" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel13" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+                <h3>Farm stay in Lanja, India</h3>
+                <p>₹16,000/night</p>
+                <span>★ 4.99</span>
+                <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel14" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-598307531146456130/original/71acd3a7-a928-4c6b-9fa5-13f3a21c41e1.jpeg?im_w=720&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-598307531146456130/original/73de272c-97c1-47a8-9746-dc9758f42b2a.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-598307531146456130/original/5ad8e231-c269-4d48-9811-1e03ef384dd4.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel14" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel14" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+                <h3>Boutique Room with Pool, Bari, India</h3>
+                <p>₹5,400/night</p>
+                <span>★ 5.0</span>
+                <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel15" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-643572739930449226/original/de03ed31-8557-4e35-af49-3f7292054e49.jpeg?im_w=720&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-643572739930449226/original/38477c5e-33a5-4430-acf8-53acbd035158.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-643572739930449226/original/bdf410b7-5e3a-4a4a-9a44-210fcde9f5b0.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel15" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel15" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+                <h3>Charming Island Villa, El Nido, Philippines</h3>
+                <p>₹82,400/night</p>
+                <span>★ 4.3</span>
+                <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel16" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1102908865910671539/original/a0147702-cb7c-4b9d-b1a4-1672c77b709b.jpeg?im_w=720&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1102908865910671539/original/c111b4c7-e01b-49ec-af1c-4d61c1a315cd.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1102908865910671539/original/a0147702-cb7c-4b9d-b1a4-1672c77b709b.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel16" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel16" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+                <h3>Tube house The airva inn, Saikhola, India</h3>
+                <p>₹2,800/night</p>
+                <span>★ 4.82</span>
+                <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel17" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1309861349864761990/original/62080bb9-1a4e-46e5-806c-b2b28f262ccf.jpeg?im_w=720&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1309861349864761990/original/3341dcea-1bca-44a5-9217-a7772e361502.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1309861349864761990/original/c97376a9-790c-4a82-bf05-ac0157d1113d.png?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel17" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel17" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h3>Ultra Luxury Villa & Pool, Panchgani, India</h3>
+            <p>₹1,26,340/night</p>
+            <span>★ 4.9</span>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel18" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/69bd1e4b-2bdb-4233-b8c2-479973184a79.jpg?im_w=720&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/ce47f01e-22e6-4fab-ae48-6a5dd2e84315.jpg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/26bbc18e-79c3-46fc-92ef-b2846cdc8c80.jpg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel18" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel18" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h3>Rejuvenating Luxury Villa, Talegaon Dabhade, India</h3>
+            <p>₹26,340/night</p>
+            <span>★ 4.88</span>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel19" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-47086741/original/89035847-1f96-4269-af1e-120a19e1cfd7.jpeg?im_w=960&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-47086741/original/1f7b9288-0edc-4af7-aa44-4127bae7311e.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-47086741/original/11594e98-3ac9-40c6-8533-6176c5abc034.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel19" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel19" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h3>Royal Boutique Hotel, Sinaia, Romania</h3>
+            <p>₹48,710/night</p>
+            <span>★ 4.7</span>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel20" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/92aa1461-acd5-487f-9598-09c58a43494e.jpg?im_w=720&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-4305754/original/96c90b3c-d3d3-4e62-8b0e-ea9271158924.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-4305754/original/9e198ba0-2504-40dd-bd58-29c2bfeae03d.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel20" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel20" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h3>Earthship Karuna, Kodaikanal, India</h3>
+            <p>₹11,000/night</p>
+            <span>★ 4.84</span>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+        
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel3" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-695709752455637761/original/a35b953f-d5ee-45a5-a869-fc5083c8f295.jpeg?im_w=1200&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-695709752455637761/original/fcfcef1e-eeee-43ef-aee7-4848de86865b.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-695709752455637761/original/72ff777e-b13c-44b8-8e14-2826abc200bb.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel3" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel3" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h3>EI chaupi, Ecuador</h3>
+            <p>₹8,395/night</p>
+            <span>★ 4.0</span>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+
+       <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel4" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-989225924012535287/original/aa2962a9-e51c-44c9-8a20-79e9a8d36b02.jpeg?im_w=1200&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-989225924012535287/original/94d08711-985d-4fd9-a766-6d719bbd19d9.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-989225924012535287/original/ba60b81f-2dc2-413a-9185-144c0b272cf3.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel4" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel4" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h3>Blue River, Colorado, US</h3>
+            <p>₹86,400/night</p>
+            <span>★ 4.8</span>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel5" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-53356377/original/198865e8-5dac-40db-8ac4-4a6edfdcf62b.jpeg?im_w=720&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-53356377/original/6904c3d0-ef3e-454e-876c-28631f48684a.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-53356377/original/bde1fada-cbf8-49cd-9870-a9ab0fe7c44e.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel5" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel5" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h3>Igloo House, Cusco, Peru</h3>
+            <p>₹59,990/night</p>
+            <span>★ 4.9</span>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel6" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-52902048/original/5c6ae46f-5ede-46e4-97d3-f8fd4a01e984.jpeg?im_w=1200&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-52902048/original/dbcf67c7-b7c1-4164-8297-a0da1f3fa4be.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTI5MDIwNDg%3D/original/e55bf791-1b1e-4088-92d3-e98434ba70f0.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel6" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel6" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h3>Fairplay, Colorado, US</h3>
+            <p>₹26,340/night</p>
+            <span>★ 4.88</span>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel7" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/1dcc71eb-499f-4d9e-ada8-49d709ddd4da.jpg?im_w=720&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/07e996e1-8aa3-4b8a-90ce-7a8bf65e9847.jpg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/f6d0ad2e-9ed6-4a38-ae25-dff9049b66bb.jpg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel7" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel7" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+                <h3>Himachal Pradesh, India</h3>
+                <p>₹3,100/night</p>
+                <span>★ 4.99</span>
+                <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel8" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-749996089802009824/original/8fefceb0-da83-461c-9441-1dc5ce1c0174.jpeg?im_w=960&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-749996089802009824/original/375f3bdf-59b7-49c2-a9b5-c486465a08c7.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-749996089802009824/original/99931a90-870f-4827-bb41-885519215f74.jpeg?im_w=480&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel8" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel8" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+                <h3>Entire home in Fairplay, Colorado, US</h3>
+                <p>₹52,870/night</p>
+                <span>★ 4.5</span>
+                <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel9" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-968240744604379372/original/91137bd3-bdff-427e-a661-6e36cb5b3aa6.jpeg?im_w=720&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-968240744604379372/original/aa02c9a7-5b80-4262-b9da-d65a4ef17b7f.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-968240744604379372/original/72aa1f3a-30a8-436d-ada1-0110caa5cb83.jpeg?im_w=720&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel9" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel9" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+                <h3>Breckenridge, Colorado, United States</h3>
+                <p>₹1,15,620/night</p>
+                <span>★ 5.0</span>
+                <button class="reserve-btn">Reserve</button>
+        </div>
+
+        <div class="listing-card">
+            <div class="carousel-wrapper">
+                <div id="carousel10" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-679548961635495824/original/38c34125-85a8-4618-ac56-a922b44904c0.jpeg?im_w=1200&im_format=avif" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-679548961635495824/original/ba154679-39fb-4673-a7de-d3a589187a65.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-679548961635495824/original/659fbcd1-e786-485a-ad0c-9dd215484fef.jpeg?im_w=1200&im_format=avif" alt="Modern Apartment - Image 3" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel10" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel10" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+                <h3>Dillon, Colorado, US</h3>
+                <p>₹40,490/night</p>
+                <span>★ 4.8</span>
+                <button class="reserve-btn">Reserve</button>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Top Section: Language and Currency -->
+            <div class="footer-top">
+                <div class="footer-language">
+                    <select class="language-select">
+                        <option value="en-IN">English (IN)</option>
+                        <option value="en-US">English (US)</option>
+                        <option value="fr-FR">Français (FR)</option>
+                        <option value="es-ES">Español (ES)</option>
+                    </select>
+                    <select class="currency-select">
+                        <option value="INR">₹ INR</option>
+                        <option value="USD">$ USD</option>
+                        <option value="EUR">€ EUR</option>
+                        <option value="GBP">£ GBP</option>
+                    </select>
+                </div>
+            </div>
+    
+            <!-- Middle Section: Social Media Links -->
+            <div class="footer-section social">
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="social-icon instagram">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon twitter">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4494/4494477.png" alt="Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon facebook">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2504/2504903.png" alt="Facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Bottom Section: Links and Copyright -->
+            <div class="footer-bottom">
+                <p>© 2024 Airbnb+</p>
+                <p>Contact Us · FAQs · Sitemap · Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
