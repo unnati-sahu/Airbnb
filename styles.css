@@ -332,9 +332,15 @@ body {
     }
 
     .search-btn {
-        flex: 1 1 100%; /* Button takes full width in its row */
-        padding: 8px 12px; /* Smaller button */
-        font-size: 0.9rem;
+        background-color: #ff385c;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 55px; /* Rounded button */
+        cursor: pointer;
+        transition: background-color 0.2s;
     }
 }
 
